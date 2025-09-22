@@ -1,0 +1,47 @@
+
+
+<!-- templates/booking/booking_success.html -->
+{% extends 'base.html' %}
+
+{% block title %}Bokning Bekräftad - CityCab{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-8 text-center">
+        <div class="card">
+            <div class="card-body p-5">
+                <div style="font-size: 4rem; color: #28a745; margin-bottom: 20px;">
+                    ✅
+                </div>
+                <h2 class="text-success mb-4">Bokning Bekräftad!</h2>
+                <p class="lead">
+                    Din taxibokning har registrerats framgångsrikt. 
+                    Vår förare har meddelats och kommer att kontakta dig inom kort.
+                </p>
+                
+                <div class="alert alert-info mt-4">
+                    <strong>Vad händer nu?</strong><br>
+                    Föraren granskar din bokning och kontaktar dig på det angivna telefonnumret 
+                    för att bekräfta tiden och ge eventuella uppdateringar.
+                </div>
+                
+                <div class="mt-4">
+                    <a href="{% url 'booking:home' %}" class="btn btn-warning me-3">
+                        Tillbaka till Hem
+                    </a>
+                    <a href="{% url 'booking:booking_form' %}" class="btn btn-outline-primary">
+                        Boka Igen
+                    </a>
+                </div>
+                
+                <div class="mt-4 pt-4 border-top">
+                    <p class="text-muted">
+                        Behöver du ändra din bokning? Ring oss på 
+                        <a href="tel:060-584-58-44">060-584-58-44</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
