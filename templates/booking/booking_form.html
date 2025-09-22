@@ -1,0 +1,71 @@
+
+
+<!-- templates/booking/booking_form.html -->
+{% extends 'base.html' %}
+
+{% block title %}Boka Din Taxi - CityCab{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-lg-6 col-md-8">
+        <div class="card">
+            <div class="card-header text-center" style="background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%); border: none;">
+                <h2 class="mb-0" style="color: #333;">🚕 Boka Din Taxi</h2>
+            </div>
+            <div class="card-body p-4">
+                <form method="post">
+                    {% csrf_token %}
+                    
+                    <div class="mb-3">
+                        <label for="{{ form.start_location.id_for_label }}" class="form-label">{{ form.start_location.label }}</label>
+                        {{ form.start_location }}
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="{{ form.end_location.id_for_label }}" class="form-label">{{ form.end_location.label }}</label>
+                        {{ form.end_location }}
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.date.id_for_label }}" class="form-label">{{ form.date.label }}</label>
+                            {{ form.date }}
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.time.id_for_label }}" class="form-label">{{ form.time.label }}</label>
+                            {{ form.time }}
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="{{ form.name.id_for_label }}" class="form-label">{{ form.name.label }}</label>
+                        {{ form.name }}
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.phone.id_for_label }}" class="form-label">{{ form.phone.label }}</label>
+                            {{ form.phone }}
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="{{ form.email.id_for_label }}" class="form-label">{{ form.email.label }}</label>
+                            {{ form.email }}
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-warning btn-lg w-100 mt-3">
+                        Boka Nu
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <p style="color: white; background: rgba(0,0,0,0.5); padding: 15px; border-radius: 10px;">
+                <strong>Behöver du hjälp?</strong><br>
+                Ring direkt: <a href="tel:060-584-58-44" style="color: #ffd700;">072-779-68-62</a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

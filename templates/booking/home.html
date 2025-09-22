@@ -1,0 +1,87 @@
+<!-- templates/booking/home.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="hero-section">
+    <h1>
+        <div class="hero-star">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 10 L58 38 L88 38 L68 54 L76 82 L50 66 L24 82 L32 54 L12 38 L42 38 Z" 
+                      fill="#ffd700" stroke="#333" stroke-width="1"/>
+                <path d="M45 30 L55 46 L50 46 L58 62 L48 52 L52 52 L45 30 Z" 
+                      fill="#333"/>
+            </svg>
+        </div>
+        CityCab Sundsvall
+    </h1>
+    <p>Din pålitliga stadstaxi - Snabba, säkra och prisvärda resor</p>
+    
+    <!-- Professional Taxi Showcase -->
+    <div class="taxi-showcase">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <div style="background: white; padding: 30px; border-radius: 15px; margin-bottom: 20px;">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPCEtLSBDYXIgYm9keSAtLT4KICA8ZWxsaXBzZSBjeD0iMjAwIiBjeT0iMTIwIiByeD0iMTgwIiByeT0iNDAiIGZpbGw9IiMzMzMzMzMiLz4KICA8cmVjdCB4PSI0MCIgeT0iODAiIHdpZHRoPSIzMjAiIGhlaWdodD0iODAiIHJ4PSIyMCIgZmlsbD0iIzMzMzMzMyIvPgogIDxyZWN0IHg9IjgwIiB5PSI1MCIgd2lkdGg9IjI0MCIgaGVpZ2h0PSIzMCIgcng9IjE1IiBmaWxsPSIjMzMzMzMzIi8+CiAgCiAgPCEtLSBXaGVlbHMgLS0+CiAgPGNpcmNsZSBjeD0iMTAwIiBjeT0iMTYwIiByPSIyNSIgZmlsbD0iIzQ0NDQ0NCIvPgogIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjE2MCIgcj0iMTUiIGZpbGw9IiM2NjY2NjYiLz4KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIxNjAiIHI9IjI1IiBmaWxsPSIjNDQ0NDQ0Ii8+CiAgPGNpcmNsZSBjeD0iMzAwIiBjeT0iMTYwIiByPSIxNSIgZmlsbD0iIzY2NjY2NiIvPgogICAgCiAgPCEtLSBUYXhpIGxpZ2h0IC0tPgogIDxyZWN0IHg9IjE2MCIgeT0iMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSIzMCIgcng9IjUiIGZpbGw9IiNmZmQ3MDAiLz4KICA8dGV4dCB4PSIyMDAiIHk9IjM4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMzMzMzMzIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgZm9udC1mYW1pbHk9IkFyaWFsIj5UQVhJPC90ZXh0PgogIAogIDwhLS0gV2luZG93cyAtLT4KICA8cmVjdCB4PSI5MCIgeT0iNjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNjY2NjY2MiLz4KICA8cmVjdCB4PSIxNDAiIHk9IjYwIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjY2NjY2NjIi8+CiAgPHJlY3QgeD0iMTkwIiB5PSI2MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iI2NjY2NjYyIvPgogIDxyZWN0IHg9IjI0MCIgeT0iNjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNjY2NjY2MiLz4KCiAgPCEtLSBDaXR5Q2FiIGJyYW5kaW5nIC0tPgogIDx0ZXh0IHg9IjIwMCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZmZkNzAwIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZm9udC1mYW1pbHk9IkFyaWFsIj5DaXR5Q2FiPC90ZXh0PgogIDx0ZXh0IHg9IjIwMCIgeT0iMTI1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZmZkNzAwIiBmb250LXNpemU9IjE0IiBmb250LWZhbWlseT0iQXJpYWwiPlN1bmRzdmFsbDwvdGV4dD4KCiAgPCEtLSBDaGVja2VyYm9hcmQgcGF0dGVybiAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MSwxNDApIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgZmlsbD0iI2ZmZDcwMCIvPgogICAgPHJlY3QgeD0iMTUiIHk9IjAiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgZmlsbD0iIzMzMzMzMyIvPgogICAgPHJlY3QgeD0iMzAiIHk9IjAiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgZmlsbD0iI2ZmZDcwMCIvPgogICAgPHJlY3QgeD0iNDUiIHk9IjAiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgZmlsbD0iIzMzMzMzMyIvPgogICAgPHJlY3QgeD0iNjAiIHk9IjAiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgZmlsbD0iI2ZmZDcwMCIvPgogICAgPHJlY3QgeD0iNzUiIHk9IjAiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgZmlsbD0iIzMzMzMzMyIvPgogICAgPHJlY3QgeD0iOTAiIHk9IjAiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgZmlsbD0iI2ZmZDcwMCIvPgogICAgPHJlY3QgeD0iMTA1IiB5PSIwIiB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIGZpbGw9IiMzMzMzMzMiLz4KICAgIDxyZWN0IHg9IjEyMCIgeT0iMCIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiBmaWxsPSIjZmZkNzAwIi8+CiAgICA8cmVjdCB4PSIxMzUiIHk9IjAiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgZmlsbD0iIzMzMzMzMyIvPgogICAgPHJlY3QgeD0iMTUwIiB5PSIwIiB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIGZpbGw9IiNmZmQ3MDAiLz4KICAgIDxyZWN0IHg9IjE2NSIgeT0iMCIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiBmaWxsPSIjMzMzMzMzIi8+CiAgICA8cmVjdCB4PSIxODAiIHk9IjAiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgZmlsbD0iI2ZmZDcwMCIvPgogICAgPHJlY3QgeD0iMTk1IiB5PSIwIiB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIGZpbGw9IiMzMzMzMzMiLz4KICAgIDxyZWN0IHg9IjIxMCIgeT0iMCIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiBmaWxsPSIjZmZkNzAwIi8+CiAgICA8cmVjdCB4PSIyMjUiIHk9IjAiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgZmlsbD0iIzMzMzMzMyIvPgogICAgPHJlY3QgeD0iMjQwIiB5PSIwIiB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIGZpbGw9IiNmZmQ3MDAiLz4KICAgIDxyZWN0IHg9IjI1NSIgeT0iMCIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiBmaWxsPSIjMzMzMzMzIi8+CiAgICA8cmVjdCB4PSIyNzAiIHk9IjAiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgZmlsbD0iI2ZmZDcwMCIvPgogICAgPHJlY3QgeD0iMjg1IiB5PSIwIiB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIGZpbGw9IiMzMzMzMzMiLz4KICAgIDxyZWN0IHg9IjMwMCIgeT0iMCIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiBmaWxsPSIjZmZkNzAwIi8+CiAgICA8cmVjdCB4PSIzMTUiIHk9IjAiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgZmlsbD0iIzMzMzMzMyIvPgogIDwvZz4KCiAgPCEtLSBQaG9uZSBudW1iZXIgLS0+CiAgPHRleHQgeD0iNDAiIHk9IjE4NSIgZmlsbD0iI2ZmZDcwMCIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZvbnQtZmFtaWx5PSJBcmlhbCI+MDcyLTc3OSA2OCA2MjwvdGV4dD4KPC9zdmc+" 
+                         alt="CityCab Sundsvall Taxi"
+                         class="img-fluid" style="max-width: 100%;">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3 style="color: white; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Professionell Taxiservice</h3>
+                <ul style="color: white; text-align: left; font-size: 1.1rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">
+                    <li style="margin-bottom: 10px;">✅ Moderna och rena fordon</li>
+                    <li style="margin-bottom: 10px;">✅ Erfarna och pålitliga förare</li>
+                    <li style="margin-bottom: 10px;">✅ GPS-spårning för säkerhet</li>
+                    <li style="margin-bottom: 10px;">✅ Miljövänliga hybridbilar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <a href="{% url 'booking:booking_form' %}" class="btn btn-warning btn-lg px-5 py-3" style="font-size: 1.3rem;">
+                Boka Din Resa Nu
+            </a>
+        </div>
+    </div>
+    
+    <div class="contact-info">
+        <h3 style="font-size: 1.8rem; margin-bottom: 15px;">Ring för direktbokning</h3>
+        <a href="tel:072-779-68-62" style="font-size: 2.2rem; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); display: block; margin-bottom: 10px;">072-779-68-62</a>
+        <p class="mt-2 mb-0" style="color: white; opacity: 0.9; font-size: 1.1rem;">
+            Tillgänglig 24/7 för dina resor i Sundsvall
+        </p>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <div style="font-size: 3rem; color: #ffd700; margin-bottom: 15px;">⚡</div>
+                <h3>Snabb Service</h3>
+                <p>Snabb bokning och pålitliga förare som kommer i tid.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <div style="font-size: 3rem; color: #ffd700; margin-bottom: 15px;">💰</div>
+                <h3>Rimliga Priser</h3>
+                <p>Konkurrenskraftiga priser utan dolda kostnader.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <div style="font-size: 3rem; color: #ffd700; margin-bottom: 15px;">🛡️</div>
+                <h3>Trygg Resa</h3>
+                <p>Licensierade förare och försäkrade fordon.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
